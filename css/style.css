@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;600;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	top: 0;
+	box-sizing: border-box;
+	font-family: 'Space Grotesk', sans-serif;
+}
+.flex{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 25px;
+}
+/* Header css goes here*/
+.header{
+	background: #fff ;
+	background-image: url("../images/BLAXUS\ 2024[59]_page-0001.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	image-resolution: from-image 300dpi;
+	background-position: right;
+	height: 100vh;
+	margin-bottom: 25px;
+}
+.header-content{
+	top: 0;
+	padding-top: -60px;
+	position: relative;
+}
+.header-content img{
+	margin-top: -50px;
+}
+.text{
+	position: absolute;
+	margin-left: 110px;
+	padding-top: 450px;
+	margin-bottom: 50px;
+	
+}
+
+.btn{
+	padding: 5px;
+	border: none;
+	background-color: #a32593;
+	border-radius: 5px;
+	font-weight: 500;
+	color: #fff;
+}
+/* us css goes here */
+.us{
+	margin: 0;
+	padding-top: 25px;
+	background-image: url("../images/BLAXUS\ 2024[59]_page-0002_cleanup\ \(2\).jpg");
+	background-position: initial;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+
+	
+}
+.us-content{
+	display: flex;
+	justify-content: space-between;
+
+}
+.us-heading {
+	color: #fff;
+	font-size: 25px;
+	position: relative;
+}
+.us-heading::after{
+	content: '';
+	position: absolute;
+	bottom: 130px;
+	height: 15px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	left: 0;
+	width: 350px;
+	background: linear-gradient(45deg, rgb(0, 174, 255), rgb(255, 0, 200));
+	
+}
+.head-text{
+	margin-left: 20px;
+}
+.us-text{
+	color: #fff;
+	margin-bottom: 25px;
+	padding: 25px;
+	
+}
+.us-text h1{
+	font-size: 50px;
+}
+.radio{
+	text-align: center;
+	padding: 35px;
+	color: #fff;
+	position: relative;
+}
+input[type="radio"]{
+	margin: 35px;
+	position: relative;
+	width: 25px;
+	height: 25px;
+	align-items: center;
+}
+.radio-element:checked:before{
+	content: "";
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-color: #84cabe;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: appear 0.8s;
+
+}
+.radio::after{
+	content: '';
+	position: absolute;
+	bottom: 25px;
+	height: 15px;
+	border-radius: 5px;
+	left: 15%;
+	width: 70%;
+	align-items: center;
+	background: linear-gradient(45deg, rgb(0, 174, 255), rgb(255, 0, 200));
+	
+}
+.us-card{
+	display: flex;
+	justify-content: space-around;
+}
+.us-card img{
+	width: 150px;
+}
+@keyframes progress {
+	0% { --percentage: 0; }
+	100% { --percentage: var(--value); }
+  }
+  
+  @property --percentage {
+	syntax: '<number>';
+	inherits: true;
+	initial-value: 0;
+  }
+  
+  [role="progressbar"] {
+	--percentage: var(--value);
+	--primary: #fff;
+	--secondary: #222;
+	--size: 150px;
+	animation: progress 2s 0.5s forwards;
+	width: var(--size);
+	aspect-ratio: 1;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	display: grid;
+	place-items: center;
+	background: linear-gradient(45deg, rgb(0, 174, 255), rgb(255, 0, 200));
+  }
+  
+  [role="progressbar"]::before {
+	content: "";
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+	mask: radial-gradient(white 55%, transparent 0);
+	mask-mode: alpha;
+	-webkit-mask: radial-gradient(#0000 55%, #000 0);
+	-webkit-mask-mode: alpha;
+  }
+  
+  [role="progressbar"]::after {
+	counter-reset: percentage var(--value);
+	content: counter(percentage) '%';
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: calc(var(--size) / 5);
+	color: var(--primary);
+  }
+/* Solution css goes here */
+.Solution{
+	background: #fff ;
+	background-image: url("../images/BLAXUS\ 2024[59]_page-0001.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	image-resolution: from-image 300dpi;
+	background-position: right;
+	height: 100vh;
+	margin-bottom: 25px;
+}
+.solution-heading{
+	position: relative;
+	margin-top: 25px;
+	font-size: 25px;
+}
+.solution-heading::after{
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	height: 15px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	left: 0;
+	width: 350px;
+	background: linear-gradient(45deg, rgb(0, 174, 255), rgb(255, 0, 200));
+	
+}
+.solution-text{
+	text-align: center;
+}
+.head-text2{
+	font-size: 52px;
+}
+.solution-info{
+	background-color: #070c6d;
+	height: 150px;
+
+	
+}
+.solution-info p{
+	padding: 25px;
+	color: #fff;
+}
+.solution-card{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+	
+	
+}
+.solution-card .card-img{
+	width: 150px;
+	height: 150px;
+	background-color: #a32593;
+	border-radius: 50%;
+	align-items: center;
+	
+	
+	
+}
+.solution-card h4{
+	display: flex;
+	font-size: 25px;
+}
+.card-img img{
+	width: 120px;
+	align-items: center;
+	margin-top: 25px;
+}
+.solution-card ul{
+	list-style: none;
+	text-align: center;
+	margin-left: -5px;
+}
+.solution-card ul li{
+	display: flex;
+}
+/* process css goes here */
+.process{
+	background: url("/images/BLAXUS\ 2024[59]_page-0004.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+}
+.process-heading{
+	position: relative;
+	font-size: 25px;
+	margin-top: 5px;
+}
+.process-heading::after{
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	height: 15px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	left: 0;
+	width: 350px;
+	background: linear-gradient(45deg, rgb(0, 174, 255), rgb(255, 0, 200));
+	
+}
+.process-content{
+	padding: 15px;
+}
+.pc-h{
+	display: flex;
+	margin-left: 50px;
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 5px;
+}
+.flex h1{
+	background-color: #a32593;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	padding: 5px;
+}
+/* brands css goes here */
+.brands{
+	background: url("/images/BLAXUS\ 2024[59]_page-0005.png");
+	background-size: cover;
+	background-position:  center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+}
+.brands-headings{
+	position: relative;
+	font-size: 25px;
+}
+.brands-headings::after{
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	height: 15px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	left: 0;
+	width: 350px;
+	background: linear-gradient(45deg, rgb(0, 174, 255), rgb(255, 0, 200));
+	
+}
+.brand-title{
+	float: right;
+	font-size: 25px;
+	color: #070c6d;
+}
+.grid-container-2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: 15%;
+}
+.grid-item{
+	padding: 2px;
+}
+.u{
+	padding: 25px;
+}
+.brand-name{
+	background: #070c6d;
+	color: #fff;
+	border-radius: 25px;
+	text-align: center;
+	width: 250px;
+	height: 50px;
+}
+/* services css goes here */
+.service{
+	background: #070c6d;
+	height: fit-content;
+	color: #fff;
+}
+.service-heading{
+	font-size: 25px;
+	position: relative;
+}
+.service-heading::after{
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	height: 15px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	left: 0;
+	width: 350px;
+	background: linear-gradient(45deg, rgb(0, 174, 255), rgb(255, 0, 200));
+	
+}
+.service-content{
+	margin-top: 25px;
+	display: flex;
+	height: 5%;
+	width: 100%;
+	position: relative;
+	z-index: 9899;
+	
+}
+.service-content::before{
+	content: "";
+	position: absolute;
+	top: 25px;
+	left: 0;
+	bottom: 0;
+	background: #fff;
+	height: 350px;
+	width: 100%;
+	z-index: -1;
+}
+.service-text{
+	padding: 25px;
+	margin-top: 50px;
+	color: #000;
+}
+.service-img img{
+	width: 450px;
+	height: 450px;
+	border-radius: 50%;
+	border: 25px solid #a32593;
+	top: -25px;
+	margin-left: 25px;
+	
+
+	
+}
+.service-brand{
+	padding: 25px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+/* why section css goes here */
+.why{
+	margin: 0;
+	position: relative;
+	
+}
+.why::before{
+	content: "";
+	position: absolute;
+	top: 150px;
+	left: 0;
+	height: 500px;
+	width: 500px;
+	background: linear-gradient(140deg, rgb(0, 174, 255), rgb(255, 0, 200));
+	clip-path: polygon(0 60%, 0% 100%, 48% 100%);
+	z-index: -1;
+}
+.why-content{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+.why-heading{
+	position: relative;
+	font-size: 25px;
+}
+.why-heading::after{
+	content: '';
+	position: absolute;
+	bottom: 1pxpx;
+	height: 15px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	left: 0;
+	width: 350px;
+	background: linear-gradient(45deg, rgb(0, 174, 255), rgb(255, 0, 200));
+	
+}
+.why-text{
+	padding: 25px;
+	background: #432e6f;
+	margin-left: 25px;
+	margin-top: 25px;
+	color:#fff;
+	border-radius: 5px;
+}
+
+.why-img{
+	padding: 25px;
+	position: relative;
+}
+.why-img::before{
+	content: '';
+	position: absolute;
+	top: 5px;
+	right: 0;
+	bottom: 0;
+	height: 15px;
+	border-radius: 5px;
+	left: 250px;
+	width: 350px;
+	background: linear-gradient(45deg, rgb(0, 174, 255), rgb(255, 0, 200));
+	
+}
+.why-img::after{
+	content: '';
+	position: absolute;
+	top: 350px;
+	right: 0;
+	bottom: -1px;
+	height: 15px;
+	border-radius: 5px;
+	left: -150px;
+	transform: rotate(90deg);
+	width: 350px;
+	background: linear-gradient(45deg, rgb(0, 174, 255), rgb(255, 0, 200));
+	
+}
+
+/* footer css goes here */
+
+.footer{
+	background: url("../images/footer.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	top: 5px;
+	background-size: cover;
+	text-align: right;
+
+
+}
+.contact{
+	padding: 250px;
+	color: #fff;
+	font-size: 25px;
+}
+
+
+
